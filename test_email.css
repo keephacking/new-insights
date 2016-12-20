@@ -1,0 +1,65 @@
+.email-background{
+	background-color:#eee;
+	padding:10px;
+}
+.email-container
+{
+	max-width:500px;
+	background-color:white;
+	font-family:sans-serif;
+	margin:0 auto;
+	overflow:hidden;
+	border-radius:5px;
+	text-align:center;
+}
+.pre-header{
+	margin:0 auto;
+	max-width:500px;
+	background-color:#eee;	
+	color:#eee;
+	font-size:5px;
+	
+}
+img{
+	max-width:100%;
+	display:block;
+	margin:0 auto;
+}
+p{
+	margin:20px;
+	font-size:18px;
+	
+	color:#666;
+	line-height:1.5;
+	font-width:300px;
+}
+.act-link
+{
+	text-align:center;
+	margin:20px;
+	
+}
+.email-container a
+{
+	text-decoration:none;
+	display:inline-block;
+	background-color:#06f;
+	color:white;
+	padding:10px 20px;
+	border-radius:5px;
+	
+}
+.footer{
+	max-width:500px;
+	background-color:#eee;
+	font-family:sans-serif;
+	margin:0 auto;
+	overflow:hidden;
+	border-radius:5px;
+	text-align:center;
+	padding:20px;
+	font-size:12px;
+}
+.footer a{
+	color:#3087f5;
+}

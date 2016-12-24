@@ -1,0 +1,246 @@
+body{
+  padding:0;
+  margin:0;
+}
+.about-author{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 3;
+}
+.side-fixed{
+  position:relative;
+  top:0;
+  left:0;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height:100vh;
+  background-color: #333;
+  color:#fff;
+  width:50%;
+}
+.side-fixed img{
+  height:30%;
+}
+.side-scrollable{
+  white-space: pre-line;
+  width:50%;
+  background-color: powderblue;
+}
+footer{
+  background-color: #000;
+  color:#fff;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  padding:40px 0;
+  z-index: 0;
+}
+footer a{
+  color:#fff;
+}
+.footer-stuff{
+  max-width: 640px;
+  margin:0 auto;
+}
+
+.his-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  width:100%;
+
+}
+.his-column{
+  display: flex;
+  flex-direction: column;
+  margin:10px;
+  align-items: center;
+  width:200px;
+  background-color: #fff;
+  position: relative;
+  border:1px solid #ccc;
+}
+.his-detail{
+  padding:10px;
+}
+.his-column img{
+  height:100px;
+}
+.his-1{
+  transform: translate(100px,20px);
+}
+.his-2{
+  z-index:1;
+}
+.his-3{
+  transform: translate(-100px,20px);
+}
+.promoScope{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left:auto;
+  margin-right: auto;
+  height:480px;
+  width: 480px;
+  background-image: url("model.jpg");
+  background-attachment: fixed;
+  background-position: center 0px;
+  border-radius: 50%;
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.window-tint{
+  border-radius: 50%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  text-align:center;
+  background-color: rgba(0,0,0,0.5);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-text{
+  color:#fff;
+  font-weight: 100 !important;
+  font-size: 50px;
+  line-height: 1.2;
+}
+.promo-text strong{
+  display: block;
+  font-size:30px;
+}
+.promo-text strong span{
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255,255,255,0.5);
+}
+.promo-text a{
+  line-height: 2;
+  font-size: 20px;
+  text-decoration: none;
+  color:#fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.promo-text a:hover{
+  background-color: #fff;
+  color:#000;
+}
+
+.about-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  position:relative;
+  z-index:2;
+  margin-bottom: 253px;
+}
+.sub-container{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  top:200px;
+  text-align: center;
+}
+.sub-row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+}
+.sub-col img{
+  height:200px;
+  width:200px;
+  display: block;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
+.is-showing{
+  opacity: 1;
+  transform: translateX("0px");
+}
+figure{
+  position: relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  overflow:hidden;
+
+  background-color:#fff;
+  margin:.5em;
+  padding:.5em;
+  opacity: 0;
+  transform: translateX("20px");
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+figcaption{
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left:-100%;
+  bottom:10px;
+  background-color: #000;
+  color:#fff;
+  padding:2px 8px;
+  font-size: 11px;
+}
+figure:hover figcaption{
+  left:0;
+}
+figure:hover img{
+  transform: scale(1.2);
+  border:2px solid lightblue;
+}
+header{
+  position:fixed;
+  z-index:3;
+  background-color:#fff;
+  border:1px solid powderblue;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  height:175px;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+}
+.head-title{
+  width:30%;
+}
+.my-photo{
+  width:30%;
+}
+.my-logo{
+  width:30%;
+}
+.head-title h1{
+  transition: all .3s ease-in-out;
+}
+.my-photo img{
+  transition: all 0.1s ease-in-out;
+  height:150px;
+  width:150px;
+  border-radius: 50%;
+}

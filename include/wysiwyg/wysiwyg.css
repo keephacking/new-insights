@@ -1,0 +1,50 @@
+#source{
+background-color:#eee;
+}
+#myTextArea{
+	display:none;
+}
+.wysiwyg-container{
+	max-width:650px;
+	display:flex;
+	flex-direction:column;
+	height:auto;
+	border:1px solid ;
+    border-radius:5px;
+    border-color:#999;
+}
+.wysiwyg{
+	width:100%;
+	
+}
+.myframe{
+	flex-grow:1;
+	width:100%;
+	border-width:0;
+	height:auto;
+}
+body.fullscreen{
+	overflow:hidden;	
+	position:fixed;
+}
+.wysiwyg-container.fullscreen{
+	position:fixed;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	height:100vh;
+    width: 100vw;
+	flex-grow:1;
+	overflow:hidden;
+	background-color:white;
+	max-width:100%;
+	z-index:10000;
+}
+.tool{
+	border:none;
+	background-color:inherit;
+}
+.image-btn,video-btn{
+	padding:0 10px;
+}
